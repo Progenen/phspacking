@@ -1,0 +1,157 @@
+.header {
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000;
+    &__container {
+        max-width: 1723px;
+        padding: 0 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    &__col {
+
+        &--logo {
+            width: 32.137%;
+        }
+
+        &--menu {
+            width: 59.54%;
+        }
+
+        &--info {
+            flex: 1 0;
+        }
+
+        &--burger {
+            display: none;
+        }
+    }
+
+    &__logo {
+        max-width: 89px;
+        width: 100%;
+        height: auto;
+        display: block;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 50px;
+        }
+
+        a {
+            display: block;
+            font-size: 14px;
+            color: #000;
+            font-weight: 400;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            position: relative;   
+            text-decoration: none;
+        }
+
+        a:hover:after {
+            width: 100%;
+        }
+
+        li.active a::after {
+            width: 100%;
+        }
+
+        a:after {
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            background-color: #0071B9;
+            bottom: 0;
+            left: 0;
+            transition: .3s;
+        }
+    }
+
+    &__info {
+        text-align: right;
+    }
+
+    &__phone {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+        transition: .3s;
+        text-decoration: none;
+        &:hover {
+            color: $blue;
+        }
+
+    }
+
+    &__schedule {
+        font-size: 10px;
+        margin: 5px 0;
+    }
+
+    &__mail {
+        display: block;
+        font-size: 10px;
+        color: #000;
+        text-decoration: none;
+        transition: .3s;
+        &:hover {
+            color: $blue;
+        }
+    }
+
+    &__burger {
+        
+    position: relative;
+    width: 30px;
+    min-width: 30px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    z-index: 4;
+    cursor: pointer;
+    span {
+        background-color: #000;
+        width: 100%;
+        height: 3px;
+        border-radius: 3px;
+        transition: .3s;
+    }
+    &.active {
+        span:first-child {
+            transform: translateY(10.7px) rotate(-45deg);
+        }
+
+        span:last-child {
+            transform: translateY(-10.7px) rotate(45deg);
+        }
+
+        span:nth-child(2) { 
+            width: 0%;
+        }
+    }
+    }
+}
