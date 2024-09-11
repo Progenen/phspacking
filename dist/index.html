@@ -57,9 +57,9 @@
                 </div>
             </header>
 <main>
-    <!-- <div class="section-slides">
-        <div class="section-slides__wrappper">
-            <section class="offer section-slide--1">
+    <div class="section-slides">
+        <div class="section-slides__wrapper">
+            <section class="offer section-slide section-slide--1">
                 <div class="offer__content">
                     <h2 class="offer__title">
                         <span class="offer__title-stroke">Упакуем</span>
@@ -212,7 +212,7 @@
                 <img src="images/content/section-slide/section-slide2.webp" alt="" class="section-slide__bg">
             </section>
         </div>
-    </div> -->
+    </div>
     <section class="about">
         <div class="container">
             <div class="row">
@@ -229,9 +229,14 @@
                         которые полностью удовлетворяют их потребности в производстве и хранении жидкостей, обеспечивая
                         эффективность, надежность, гибкость и энергосбережение при розливе и упаковке.
                     </p>
-                    <a href="#" class="about__link">
+                    <a href="#" class="about__link link">
                         О нас
-                        <img src="images/icons/arrow-right.svg" alt="">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.89691 4.69034C5.96564 4.75603 6 4.83158 6 4.91698C6 5.00237 5.96564 5.07792 5.89691 5.14361L1.09278 9.73545C1.02406 9.80114 0.945017 9.83398 0.85567 9.83398C0.766323 9.83398 0.687285 9.80114 0.618557 9.73545L0.103093 9.24276C0.0343643 9.17707 0 9.10152 0 9.01613C0 8.93073 0.0343643 8.85518 0.103093 8.78949L4.15464 4.91698L0.103093 1.04446C0.0343643 0.97877 0 0.903225 0 0.817825C0 0.732427 0.0343643 0.656881 0.103093 0.59119L0.618557 0.0985041C0.687285 0.0328121 0.766323 -3.33786e-05 0.85567 -3.33786e-05C0.945017 -3.33786e-05 1.02406 0.0328121 1.09278 0.0985041L5.89691 4.69034Z"
+                                fill="#0071B9" />
+                        </svg>
+
                     </a>
                 </div>
             </div>
@@ -441,21 +446,14 @@
                         <div class="blog__slider-nav slider__nav">
                             <div
                                 class="blog__slider-nav-arrow blog__slider-nav-arrow--prev slider__nav-arrow slider__nav-arrow--prev arrow arrow--prev">
-                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.206185 10.2873C0.0687284 10.1559 -6.42629e-08 10.0048 -7.94465e-08 9.83402C-9.46301e-08 9.66322 0.0687283 9.51213 0.206185 9.38075L9.81443 0.197075C9.95189 0.0656917 10.11 1.62489e-07 10.2887 1.47127e-07C10.4674 1.31764e-07 10.6254 0.0656916 10.7629 0.197075L11.7938 1.18245C11.9313 1.31383 12 1.46492 12 1.63572C12 1.80652 11.9313 1.95761 11.7938 2.08899L3.69072 9.83402L11.7938 17.579C11.9313 17.7104 12 17.8615 12 18.0323C12 18.2031 11.9313 18.3542 11.7938 18.4856L10.7629 19.471C10.6254 19.6023 10.4674 19.668 10.2887 19.668C10.11 19.668 9.95189 19.6023 9.81443 19.471L0.206185 10.2873Z"
-                                        fill="black" />
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#arrowLeft'></use>
                                 </svg>
-
                             </div>
                             <div
                                 class="blog__slider-nav-arrow blog__slider-nav-arrow--next slider__nav-arrow slider__nav-arrow--next arrow arrow--next">
-                                <svg width="12" height="20" viewBox="0 0 12 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M0.206185 10.2873C0.0687284 10.1559 -6.42629e-08 10.0048 -7.94465e-08 9.83402C-9.46301e-08 9.66322 0.0687283 9.51213 0.206185 9.38075L9.81443 0.197075C9.95189 0.0656917 10.11 1.62489e-07 10.2887 1.47127e-07C10.4674 1.31764e-07 10.6254 0.0656916 10.7629 0.197075L11.7938 1.18245C11.9313 1.31383 12 1.46492 12 1.63572C12 1.80652 11.9313 1.95761 11.7938 2.08899L3.69072 9.83402L11.7938 17.579C11.9313 17.7104 12 17.8615 12 18.0323C12 18.2031 11.9313 18.3542 11.7938 18.4856L10.7629 19.471C10.6254 19.6023 10.4674 19.668 10.2887 19.668C10.11 19.668 9.95189 19.6023 9.81443 19.471L0.206185 10.2873Z"
-                                        fill="black" />
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#arrowLeft'></use>
                                 </svg>
                             </div>
                         </div>
@@ -464,12 +462,275 @@
             </div>
         </div>
     </section>
+    <section class="technologies">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-1 order-lg-0">
+                    <h2 class="main-title main-title--alt">
+                        Blowing-Filling-Capping Combiblock
+                    </h2>
+                    <div class="techologies__descr text">
+                        <p>
+                            PHS объединяет самые передовые технологии выдува и розлива бутылок в отрасли, дополняя их
+                            преимущества. Одновременно с этим мы полностью освоили основную технологию COMAN для
+                            разработки и производства нашего собственного ключевого продукта — серии CGX Combiblock,
+                            который прост в эксплуатации, стабилен и эффективен, отличается низким энергопотреблением и
+                            высокой степенью автоматизации.
+                        </p>
+                        <p>
+                            Типы продукции варьируются от небольших бутылок (100 мл) до 19 литровых бочек, а
+                            производственная мощность составляет от 2000 бочек в час (19 л/бочка) до 54 000 бутылок в
+                            час (500 мл/бутылка).
+                        </p>
+                    </div>
+                    <a href="#" class="link link--alt">
+                        Read More
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.89691 4.69034C5.96564 4.75603 6 4.83158 6 4.91698C6 5.00237 5.96564 5.07792 5.89691 5.14361L1.09278 9.73545C1.02406 9.80114 0.945017 9.83398 0.85567 9.83398C0.766323 9.83398 0.687285 9.80114 0.618557 9.73545L0.103093 9.24276C0.0343643 9.17707 0 9.10152 0 9.01613C0 8.93073 0.0343643 8.85518 0.103093 8.78949L4.15464 4.91698L0.103093 1.04446C0.0343643 0.97877 0 0.903225 0 0.817825C0 0.732427 0.0343643 0.656881 0.103093 0.59119L0.618557 0.0985041C0.687285 0.0328121 0.766323 -3.33786e-05 0.85567 -3.33786e-05C0.945017 -3.33786e-05 1.02406 0.0328121 1.09278 0.0985041L5.89691 4.69034Z"
+                                fill="#0071B9" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-lg-6 order-0 order-lg-1">
+                    <img src="images/content/technologies/technologies-img.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="packing">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="packing__title main-title main-title--line">
+                        Упаковывай, что угодно
+                    </h2>
+                    <p>
+                        На основе потребностей и ожиданий клиента, а также будущих производственных планов, мы
+                        предлагаем комплексные решения с использованием новейших технологий, учитывая инфраструктурные
+                        особенности и тенденции развития отрасли, гарантируя при этом полный производственный процесс.
+                    </p>
+                    <ul class="packing__nums">
+                        <li>
+                            <span class="packing__nums-count">
+                                50+
+                            </span>
+                            <span>
+                                Professional
+                                Talents
+                            </span>
+                        </li>
+                        <li>
+                            <span class="packing__nums-count">
+                                80+
+                            </span>
+                            <span>
+                                Invention & New
+                                Utility Patents
+                            </span>
+                        </li>
+                        <li>
+                            <span class="packing__nums-count">
+                                100+
+                            </span>
+                            <span>
+                                Countries &
+                                Regions
+                            </span>
+                        </li>
+                        <li>
+                            <span class="packing__nums-count">
+                                500+
+                            </span>
+                            <span>
+                                Customers &
+                                Users
+                            </span>
+                        </li>
+                        <li>
+                            <span class="packing__nums-count">
+                                800+
+                            </span>
+                            <span>
+                                Production Lines
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="packing__quote box">
+                        <p class="quote">
+                            Наши продукты были экспортированы более чем в 100 стран и регионов, и нами пользуются более
+                            500 клиентов и пользователей, таких как Mengniu, Master Kong, Nongfu Spring, PANPAN,
+                            Coca-Cola, Yili, Comfort, Tsingtao Beer, SnowBeer, RedBull, Jianlibao, C’setbon, Nestle
+                            Waters, Lotte, Malee, Safeguard, Kinsell, Perrier, Evian, Wahaha, New Hope, Hengshun, LEE
+                            KUM KEE, Tuborg, Absolut, ACUQA, Walch, HPGC, EastRoc, Unilever и другие. Более 800
+                            производственных линий успешно приняты и введены в эксплуатацию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <video src="video/video.mp4" controls="true"></video>
+                    </div>
+                    <div class="col-lg-5 offset-lg-1 ">
+                        <h2 class="main-title main-title--alt">
+                            Индивидуальные комплексные решения и проекты «под ключ»
+                        </h2>
+                        <div class="text text--alt">
+                            <p>
+                                С широким спектром технологий PHS для розлива и упаковки пластиковых контейнеров (PET,
+                                PP, PE, HDPE), стеклянных бутылок и банок, PHS предлагает обширный ассортимент продукции
+                                для мирового рынка напитков и жидких продуктов питания.
+                            </p>
+                            <p>
+                                Решения, разработанные PHS, воплощаются в широком выборе продукции: от механических
+                                дозаторов, простейших и проверенных систем, до самых современных электронных дозаторов,
+                                ультра-чистого и асептического розлива; от поставок отдельных машин для розлива до
+                                поставок полных производственных линий.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="call">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="text">
+                        <p>
+                            PHS опирается на партнеров в составе группы компаний, а также на коллег из индустрии
+                            оборудования для жидкой упаковки. Имея более 80 лет накопленного опыта и ведущие технические
+                            команды, наши технологические и сервисные команды предоставляют круглосуточное обслуживание
+                            высшего уровня 7 дней в неделю.
+                        </p>
+                    </div>
+                    <div class="call__dominations">
+                        <div class="call__dominations-item">
+                            <div class="call__dominations-item-img">
+                                <img src="images/icons/call-dominations-icon1.svg" alt="">
+                            </div>
+                            <h3>
+                                Профессиональная поддержка продукции и решений
+                            </h3>
+                        </div>
+                        <div class="call__dominations-item">
+                            <div class="call__dominations-item-img">
+                                <img src="images/icons/call-dominations-icon2.svg" alt="">
+                            </div>
+                            <h3>
+                                Удаленное обслуживание и оперативное техобслуживание
+                            </h3>
+                        </div>
+                        <div class="call__dominations-item">
+                            <div class="call__dominations-item-img">
+                                <img src="images/icons/call-dominations-icon3.svg" alt="">
+                            </div>
+                            <h3>
+                                Полное обучение работе с системой
+                            </h3>
+                        </div>
+                        <div class="call__dominations-item">
+                            <div class="call__dominations-item-img">
+                                <img src="images/icons/call-dominations-icon4.svg" alt="">
+                            </div>
+                            <h3>
+                                Идеальное послепродажное обслуживание
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <form action="#" class="form box">
+                        <h3 class="main-title">
+                            Мы на связи
+                        </h3>
+                        <p>
+                            Свяжитесь с PHS, чтобы получить инновационные решения для вашего бизнеса.
+                        </p>
+                        <label for="formName">Имя <span>*</span></label>
+                        <input type="text" name="name" id="formName" placeholder="Иванов Иван Иванович" required>
+                        <label for="formPhone">Номер телнфона <span>*</span></label>
+                        <input type="tel" name="phone" id="formPhone" placeholder="+7 911 000 00 00" required>
+                        <label for="formMail">Эл. почта <span>*</span></label>
+                        <input type="email" name="mail" id="formMail" placeholder="info@placeholder.com" required>
+                        <label for="formMessage">Ваш комментарий <span>*</span></label>
+                        <textarea name="message" id="formMessage" placeholder="Привет!" required></textarea>
+                        <button type="submit">
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 </div>
 <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="footer__title">
+                    Всё под вашу задачу
+                </h2>
+                <p>
+                    Разработка комплексных решений и проектов «под ключ».
+                </p>
+                <a href="#" class="footer__mail">
+                    <svg>
+                        <use xlink:href='svg/dest/stack/spriteMono.svg#mail'></use>
+                    </svg>
 
+                    На связи
+                </a>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/youtube.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/linkedin.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/icons/insta.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <p class="footer__copyright">
+                    Copyright 2021 <strong>PHS & EQS</strong>. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </div>
 </footer>
 </div>
+<a href="#" class="anchor">
+    <svg>
+        <use xlink:href='svg/dest/stack/spriteMono.svg#arrowLeft'></use>
+    </svg>
+</a>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="JS/bundle.js"></script>

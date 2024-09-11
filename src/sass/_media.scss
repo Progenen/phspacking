@@ -36,6 +36,12 @@
             font-size: 13px;
         }
     }
+
+    // packing 1220
+    .packing {
+        margin: 0;
+        background-size: cover;
+    }
 }
 
 @media (max-width:1020px){
@@ -98,31 +104,26 @@
         }
     }
 
-    // main-title 992
-    .main-title {
-        font-size: 20px;
+    // vars 992
+    :root {
+        --title-size: 20px;
+        --text-gap: 15px;
     }
 
     // about 992
     .about {
-        padding: 80px 0 100px;
         video {
             max-width: 100%;
             height: auto;
         }
 
         &__title {
-            margin-bottom: 40px;
-        }
-
-        p {
-            font-size: 18px;
+            margin-top: calc(var(--1-gap) * 2);
         }
     }
 
     // blog 992
     .blog {
-        padding: 80px 0 70px;
         &__slider-ui {
             margin-top: 25px;
         }
@@ -132,25 +133,95 @@
             height: 60px;
         }
     }
+
+    // technologies 992
+    .technologies {
+
+        img {
+            display: block;
+            max-height: 280px;
+            object-fit: cover;
+        }
+    }
+
+    section {
+        padding: 80px 0;
+    }
+
+    // box 992
+    .box {
+        padding: 20px;
+    }
+
+    // packing 992
+    .packing {
+        background-image: none;
+
+        &__quote {
+            margin-top: 15px;
+        }
+    }
+
+    // projects 992
+    .projects {
+        video {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            margin-bottom: var(--1-gap);
+        }
+    }
+
+    // call 992
+    .call {
+        .text {
+            margin-bottom: 30px;
+        }
+
+        .form {
+            margin-top: calc(var(--1-gap) * 1.5);
+        }
+    }
+
+    :root {
+        --1-gap: 15px;
+    }
+
+    // footer 992 
+    .footer {
+        &__title {
+            font-size: 50px;
+        }
+    }
+
+    // anchor 
+    .anchor {
+        right: 25px;
+        width: 40px;
+        height: 40px;
+        &.active {
+            bottom: 25px;
+        }
+    }
 }
 
 @media (max-width:876px){
 
 }
 
-@media (max-width:786px){
+@media (max-width:768px){
 
     // quote 768
     .quote {
+        padding-top: 45px;
         &::before {
+            top: 0;
             font-size: 60px;
-
         }
     }
 
     // about 768
     .about {
-        padding: 60px 0 80px;
 
         p {
             font-size: 16px;
@@ -159,7 +230,6 @@
 
     // blog 768
     .blog {
-        padding: 60px 0 50px;
 
         &__slider-article-inner {
             display: block;
@@ -181,9 +251,60 @@
             justify-content: center;
         }
     }
+
+    // vars 768
+    :root {
+        --text-size-2: 14px;
+    }
+
+    // technologies 768
+    .technologies {
+        p {
+            font-size: 14px;
+        }
+
+        img {
+            max-height: 150px;
+        }
+    }
+
+    // packing 768
+    .packing {
+        &__nums {
+            gap: 25px;
+        }
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    // box 768
+    .box {
+        padding: 15px;
+    }
+
+    // dominations 768
+    .call {
+        &__dominations {
+            row-gap: var(--1-gap);
+        }
+    }
+
+    .form {
+
+        button {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width:576px){
+
+    :root {
+        --1-gap: 10px;
+    }
+
     // header 576
     .header {
         &__col--logo {
@@ -192,6 +313,28 @@
 
         &__burger {
             margin-left: 15px;
+        }
+    }
+
+    // call 576
+    .call {
+        &__dominations {
+            flex-direction: column;
+        }
+
+        &__dominations-item {
+            width: 100%;
+        }
+
+        &__dominations-item-img {
+            height: auto;
+        }
+    }
+
+    // footer 576
+    .footer {
+        &__title {
+            font-size: 35px;
         }
     }
 }

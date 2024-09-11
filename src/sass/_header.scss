@@ -3,6 +3,7 @@
     background-color: #fff;
     width: 100%;
     z-index: 1000;
+    padding: 4.5px;
     &__container {
         max-width: 1723px;
         padding: 0 15px;
@@ -19,7 +20,7 @@
     &__col {
 
         &--logo {
-            width: 32.137%;
+            width:33.347%;
         }
 
         &--menu {
@@ -36,13 +37,11 @@
     }
 
     &__logo {
-        max-width: 89px;
-        width: 100%;
-        height: auto;
         display: block;
         img {
+            max-width: 109px;
             width: 100%;
-            height: 100%;
+            height: auto;
         }
     }
 
@@ -58,11 +57,9 @@
 
         a {
             display: block;
-            font-size: 14px;
+            font-size: var(--text-size-1);
             color: #000;
             font-weight: 400;
-            padding-top: 2px;
-            padding-bottom: 2px;
             position: relative;   
             text-decoration: none;
         }
@@ -77,11 +74,12 @@
 
         a:after {
             content: "";
+            position: absolute;
             display: block;
             width: 0%;
             height: 2px;
             background-color: #0071B9;
-            bottom: 0;
+            bottom: 2px;
             left: 0;
             transition: .3s;
         }
@@ -97,25 +95,28 @@
         color: #000;
         transition: .3s;
         text-decoration: none;
+        line-height: normal;
         &:hover {
-            color: $blue;
+            color: var(--color-blue);
         }
 
     }
 
     &__schedule {
         font-size: 10px;
-        margin: 5px 0;
+        margin: 3.5px 0;
+        line-height: normal;
     }
 
     &__mail {
         display: block;
+        line-height: normal;
         font-size: 10px;
         color: #000;
         text-decoration: none;
         transition: .3s;
         &:hover {
-            color: $blue;
+            color: var(--color-blue);
         }
     }
 
